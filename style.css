@@ -1,0 +1,356 @@
+/* Estilização dos componetes global */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f0fff0;
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+}
+section h1 {
+    margin: 50px;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: solid 1px;
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.pokemon .containerTypes {
+    display: flex;
+    gap: 1rem;
+}
+
+.pokemon img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+.pokemonpng {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    border: solid 1px;
+    border-radius: 50px;
+    width: 350px;
+    height: 350px;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.pokemonpng .containerTypes {
+    display: flex;
+    gap: 1rem;
+}
+
+.pokemonpng img {
+    width: 80%;
+}
+
+#pokemonList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    height: auto;
+}
+
+.type {
+    text-align: center;
+    padding: 0.4rem;
+    border: solid black 1px;
+    border-radius: 15px;
+    width: 70px;
+}
+
+/* adptação da tela de acordo com o tamanho */
+@media screen and (min-width: 360px) {
+    #pokemonList {
+        grid-template-columns: 1fr;
+    }
+    .pokemon {
+        width: 350px;
+        height: 400px;
+        margin: 1rem;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 794px) {
+    #pokemonList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1166px) {
+    #pokemonList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1632px) {
+    #pokemonList {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Cores background dos pokemons */
+.normal {
+    background-color: rgb(169, 169, 121, 0.5);
+    border: solid 2px rgb(169, 169, 121);
+    transition: all 0.5s ease-in;
+}
+.fire {
+    background-color: rgb(240, 129, 44, 0.5);
+    border: solid 2px rgb(240, 129, 44);
+    transition: all 0.5s ease-in;
+}
+.water {
+    background-color: rgb(104, 145, 240, 0.5);
+    border: solid 2px rgb(104, 145, 240);
+    transition: all 0.5s ease-in;
+}
+.grass {
+    background-color: rgb(121, 201, 79, 0.5);
+    border: solid 2px rgb(121, 201, 79);
+    transition: all 0.5s ease-in;
+}
+.flying {
+    background-color: rgb(169, 145, 240, 0.5);
+    border: solid 2px rgb(169, 145, 240);
+    transition: all 0.5s ease-in;
+}
+.fighting {
+    background-color: rgb(193, 44, 35, 0.5);
+    border: solid 2px rgb(193, 44, 35);
+    transition: all 0.5s ease-in;
+}
+.poison {
+    background-color: rgb(161, 62, 161, 0.5);
+    border: solid 2px rgb(161, 62, 161);
+    transition: all 0.5s ease-in;
+}
+.electric {
+    background-color: rgb(248, 209, 44, 0.5);
+    border: solid 2px rgb(248, 209, 44);
+    transition: all 0.5s ease-in;
+}
+.ground {
+    background-color: rgb(225, 193, 104, 0.5);
+    border: solid 2px rgb(225, 193, 104);
+    transition: all 0.5s ease-in;
+}
+.rock {
+    background-color: rgb(185, 161, 53, 0.5);
+    border: solid 2px rgb(185, 161, 53);
+    transition: all 0.5s ease-in;
+}
+.psychic {
+    background-color: rgb(248, 87, 137, 0.5);
+    border: solid 2px rgb(248, 87, 137);
+    transition: all 0.5s ease-in;
+}
+.ice {
+    background-color: rgb(153, 217, 217, 0.5);
+    border: solid 2px rgb(153, 217, 217);
+    transition: all 0.5s ease-in;
+}
+.bug {
+    background-color: rgb(169, 185, 26, 0.5);
+    border: solid 2px rgb(169, 185, 26);
+    transition: all 0.5s ease-in;
+}
+.ghost {
+    background-color: rgb(112, 87, 153, 0.5);
+    border: solid 2px rgb(112, 87, 153);
+    transition: all 0.5s ease-in;
+}
+.steel {
+    background-color: rgb(185, 185, 209, 0.5);
+    border: solid 2px rgb(185, 185, 209);
+    transition: all 0.5s ease-in;
+}
+.dragon {
+    background-color: rgb(112, 53, 248, 0.5);
+    border: solid 2px rgb(112, 53, 248);
+    transition: all 0.5s ease-in;
+}
+
+.dark {
+    background-color: rgb(112, 87, 153, 0.5);
+    border: solid 2px rgb(112, 87, 153);
+    transition: all 0.5s ease-in;
+}
+.fairy {
+    background-color: rgb(255, 156, 226, 0.5);
+    border: solid 2px rgb(255, 156, 226);
+    transition: all 0.5s ease-in;
+}
+
+/* Cores background dos pokemons hover*/
+.normal:hover {
+    background-color: rgb(169, 169, 121, 0.8);
+    transition: all 0.5s ease-in;
+}
+.fire:hover {
+    background-color: rgb(240, 129, 44, 0.8);
+    transition: all 0.5s ease-in;
+}
+.water:hover {
+    background-color: rgb(104, 145, 240, 0.8);
+    transition: all 0.5s ease-in;
+}
+.grass:hover {
+    background-color: rgb(121, 201, 79, 0.8);
+    transition: all 0.5s ease-in;
+}
+.flying:hover {
+    background-color: rgb(169, 145, 240, 0.8);
+    transition: all 0.5s ease-in;
+}
+.fighting:hover {
+    background-color: rgb(193, 44, 35, 0.8);
+    transition: all 0.5s ease-in;
+}
+.poison:hover {
+    background-color: rgb(161, 62, 161, 0.8);
+    transition: all 0.5s ease-in;
+}
+.electric:hover {
+    background-color: rgb(248, 209, 44, 0.8);
+    transition: all 0.5s ease-in;
+}
+.ground:hover {
+    background-color: rgb(225, 193, 104, 0.8);
+    transition: all 0.5s ease-in;
+}
+.rock:hover {
+    background-color: rgb(185, 161, 53, 0.8);
+    transition: all 0.5s ease-in;
+}
+.psychic:hover {
+    background-color: rgb(248, 87, 137, 0.8);
+    transition: all 0.5s ease-in;
+}
+.ice:hover {
+    background-color: rgb(153, 217, 217, 0.8);
+    transition: all 0.5s ease-in;
+}
+.bug:hover {
+    background-color: rgb(169, 185, 26, 0.8);
+    transition: all 0.5s ease-in;
+}
+.ghost:hover {
+    background-color: rgb(112, 87, 153, 0.8);
+    transition: all 0.5s ease-in;
+}
+.steel:hover {
+    background-color: rgb(185, 185, 209, 0.8);
+    transition: all 0.5s ease-in;
+}
+.dragon:hover {
+    background-color: rgb(112, 53, 248, 0.8);
+    transition: all 0.5s ease-in;
+}
+
+.dark:hover {
+    background-color: rgb(112, 87, 153, 0.8);
+    transition: all 0.5s ease-in;
+}
+.fairy:hover {
+    background-color: rgb(255, 156, 226, 0.8);
+    transition: all 0.5s ease-in;
+}
+
+/* Cores background dos pokemons types*/
+.containerTypes .normal {
+    background-color: rgb(169, 169, 121);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .fire {
+    background-color: rgb(240, 129, 44);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .water {
+    background-color: rgb(104, 145, 240);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .grass {
+    background-color: rgb(121, 201, 79);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .flying {
+    background-color: rgb(169, 145, 240);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .fighting {
+    background-color: rgb(193, 44, 35);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .poison {
+    background-color: rgb(161, 62, 161);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .electric {
+    background-color: rgb(248, 209, 44);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .ground {
+    background-color: rgb(225, 193, 104);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .rock {
+    background-color: rgb(185, 161, 53);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .psychic {
+    background-color: rgb(248, 87, 137);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .ice {
+    background-color: rgb(153, 217, 217);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .bug {
+    background-color: rgb(169, 185, 26);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .ghost {
+    background-color: rgb(112, 87, 153);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .steel {
+    background-color: rgb(185, 185, 209);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .dragon {
+    background-color: rgb(112, 53, 248);
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.containerTypes .dark {
+    background-color: rgb(112, 87, 153);
+    border: solid 1px rgb(0, 0, 0);
+}
+.containerTypes .fairy {
+    background-color: rgb(255, 156, 226);
+    border: solid 1px rgb(0, 0, 0);
+}
