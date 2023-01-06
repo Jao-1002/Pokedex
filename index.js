@@ -1,5 +1,18 @@
 const pokemonList = document.getElementById("pokemonList");
 const titulo = document.getElementById("titulo");
+const icon = document.querySelector(".icon")
+const divButtons = document.querySelector(".buttons")
+const selecao = document.querySelector(".selecao")
+
+const h21 = document.querySelector("#geracao1")
+const h22 = document.querySelector("#geracao2")
+const h23 = document.querySelector("#geracao3")
+const h24 = document.querySelector("#geracao4")
+const h25 = document.querySelector("#geracao5")
+const h26 = document.querySelector("#geracao6")
+const h27 = document.querySelector("#geracao7")
+const h28 = document.querySelector("#geracao8")
+
 
 const primeira = document.querySelector("#primeira");
 const segunda = document.getElementById("segunda");
@@ -88,7 +101,7 @@ function fetchPokemonn(numeroI, numeroF) {
                    </div> 
                 </li>
             `;
-            console.log(accmulator);
+            
             return accmulator;
         }, "");
 
@@ -192,3 +205,66 @@ oitava.onclick = () => {
     geracao = "oitava";
     escolher();
 };
+
+let verificar = 0
+icon.onclick = () => {
+    
+    if (verificar === 0) {
+        divButtons.style.cssText = 'display: grid'  
+
+        verificar = 1   
+    }else{
+        verificar = 0
+        divButtons.style.cssText = 'display: none'
+    }
+    
+} 
+
+h21.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "primeira";
+    escolher();
+}
+h22.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "segunda";
+    escolher();
+}
+h23.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "terceira";
+    escolher();
+}
+h24.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "quarta";
+    escolher();
+}
+h25.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "quinta";
+    escolher();
+}
+h26.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "sexta";
+    escolher();
+}
+h27.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "setima";
+    escolher();
+}
+h28.onclick = () => {
+    icon.style.cssText = 'display: block'
+    selecao.style.cssText = 'display: none'
+    geracao = "oitava";
+    escolher();
+}
